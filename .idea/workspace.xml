@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1486c092-e01d-473c-b7c0-8eacd0140346" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/lib/go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1jkHhsBfVI9xUgpSL5W6wl06O87" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build github.com/dertiedemann/scn-pick-ban" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="scn-pick-ban" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/dertiedemann/scn-pick-ban" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/dertiedemann/scn-pick-ban" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="476" y="196" width="404" height="315" key="#Go_Modules" timestamp="1604341316550">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="476" y="196" width="404" height="315" key="#Go_Modules/0.0.1366.768@0.0.1366.768" timestamp="1604341316550" />
+    <state x="105" y="-17" width="1081" height="660" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604362904455">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="105" y="-17" width="1081" height="660" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1604362904455" />
+    <state x="452" y="103" width="428" height="472" key="FileChooserDialogImpl" timestamp="1604351028744">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="452" y="103" width="428" height="472" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1604351028744" />
+    <state width="658" height="508" key="GridCell.Tab.0.bottom" timestamp="1604373481161">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="658" height="508" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1604373481161" />
+    <state width="658" height="508" key="GridCell.Tab.0.center" timestamp="1604373481160">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="658" height="508" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1604373481160" />
+    <state width="658" height="508" key="GridCell.Tab.0.left" timestamp="1604373481160">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="658" height="508" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1604373481160" />
+    <state width="658" height="508" key="GridCell.Tab.0.right" timestamp="1604373481160">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="658" height="508" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1604373481160" />
+    <state x="170" y="-6" key="SettingsEditor" timestamp="1604350970810">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="170" y="-6" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1604350970810" />
+    <state x="176" y="-348" width="908" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604372511725">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="176" y="-348" width="908" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1604372511725" />
+  </component>
+</project>
