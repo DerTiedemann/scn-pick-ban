@@ -43,7 +43,7 @@ func main() {
 	}
 	defer wsClient.Close()
 
-	interrupt := make(chan os.Signal)
+	interrupt := make(chan os.Signal, 1)
 	signal.Notify(interrupt, os.Interrupt)
 
 	ctx, cancelFunc := context.WithCancel(context.Background())
