@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1486c092-e01d-473c-b7c0-8eacd0140346" name="Default Changelist" comment="" />
+    <list default="true" id="1486c092-e01d-473c-b7c0-8eacd0140346" name="Default Changelist" comment="feat(lcu): abstracted lcu into its own package">
+      <change afterPath="$PROJECT_DIR$/pkg/providers/lcuHttpPollProvider.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/providers/lcuWebsocketProvider.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/providers/replayProvider.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/providers/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/replay/recorder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,15 +25,20 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/lib/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1jkHhsBfVI9xUgpSL5W6wl06O87" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -31,7 +46,13 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github/workflows" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="go build github.com/dertiedemann/scn-pick-ban" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
@@ -53,6 +74,12 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(lcu): abstracted lcu into its own package" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(lcu): abstracted lcu into its own package" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -65,33 +92,45 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="105" y="-17" width="1081" height="660" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1604362904455" />
+    <state x="220" y="-64" width="904" height="756" key="CommitChangelistDialog2" timestamp="1604690038064">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="220" y="-64" width="904" height="756" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1604690038064" />
     <state x="452" y="103" width="428" height="472" key="FileChooserDialogImpl" timestamp="1604351028744">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="452" y="103" width="428" height="472" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1604351028744" />
-    <state width="658" height="508" key="GridCell.Tab.0.bottom" timestamp="1604373481161">
+    <state width="1316" height="208" key="GridCell.Tab.0.bottom" timestamp="1604596800635">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="658" height="508" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1604373481161" />
-    <state width="658" height="508" key="GridCell.Tab.0.center" timestamp="1604373481160">
+    <state width="1316" height="208" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1604596800635" />
+    <state width="1316" height="208" key="GridCell.Tab.0.center" timestamp="1604596800635">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="658" height="508" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1604373481160" />
-    <state width="658" height="508" key="GridCell.Tab.0.left" timestamp="1604373481160">
+    <state width="1316" height="208" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1604596800635" />
+    <state width="1316" height="208" key="GridCell.Tab.0.left" timestamp="1604596800634">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="658" height="508" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1604373481160" />
-    <state width="658" height="508" key="GridCell.Tab.0.right" timestamp="1604373481160">
+    <state width="1316" height="208" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1604596800634" />
+    <state width="1316" height="208" key="GridCell.Tab.0.right" timestamp="1604596800635">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="658" height="508" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1604373481160" />
+    <state width="1316" height="208" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1604596800635" />
     <state x="170" y="-6" key="SettingsEditor" timestamp="1604350970810">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="170" y="-6" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1604350970810" />
-    <state x="176" y="-348" width="908" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604372511725">
+    <state x="158" y="-492" width="908" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604689561703">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="176" y="-348" width="908" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1604372511725" />
+    <state x="158" y="-492" width="908" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1604689561703" />
+    <state x="363" y="-9" width="640" height="768" key="find.popup" timestamp="1604552061366">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="363" y="-9" width="640" height="768" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1604552061366" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1604552075044">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1604552075044" />
   </component>
 </project>
